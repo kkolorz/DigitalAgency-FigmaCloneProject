@@ -1,0 +1,59 @@
+@media(max-width: 576px) {
+
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 3.2rem;
+        text-align: center;
+    }
+
+    .ellipse-1 {
+        height: 450px;
+        width: 450px;
+    }
+
+    .nav {
+        margin: 48px 24px;
+
+        &__logo {
+            p {
+                font-size: 1.4rem
+            }
+        }
+
+        &__items {
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translateX(0);
+            // background: #fff;
+        }
+    }
+
+    .header {
+        margin-top: 95px;
+
+        &__text {
+            margin-top: 0;
+            
+            p {
+                font-size: 1.6rem;
+                text-align: center;
+            }
+
+            a {
+                margin: 34px auto;
+            }
+
+            h1 {
+                margin-top: 0;
+            }
+        }
+    }
+}

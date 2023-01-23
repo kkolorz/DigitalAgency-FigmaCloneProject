@@ -1,0 +1,14 @@
+@mixin arrow-icons {
+    margin-top: 45px;
+    font-size: 2rem;
+    transition: scale .3s;
+
+    &:hover {
+        scale: 1.4;
+    }
+}
+
+@mixin scale-img {
+    width: 100%;
+    height: auto;
+}

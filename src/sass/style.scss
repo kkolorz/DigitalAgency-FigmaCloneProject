@@ -1,0 +1,324 @@
+@use './colors' as *;
+@use './components' as *;
+@use './mixins' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Inter', sans-serif;
+    background: $main-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $text-color;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 6.4rem;
+}
+
+h2 {
+    font-size: 4.8rem;
+}
+
+.ellipse-1 {
+    position: absolute;
+    width: 679px;
+    height: 679px;
+    top: -324px;
+    left: -221px;
+    background: rgba(142, 173, 213, 0.4);
+    filter: blur(153px);
+}
+
+.nav {
+    width: 100%;
+    max-width: 1076px;
+    margin: 46px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+
+    &__logo p {
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 2px 0;
+        cursor: pointer;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+
+        a {
+            overflow: auto;
+            padding: 10px;
+            font-size: 1.8rem;
+            font-weight: 400;
+            text-decoration: none;
+            color: $text-color;
+            cursor: pointer;
+            transition: all .3s;
+        }
+    }
+}
+
+.header {
+    margin-top: 51px;
+
+    img {
+        @include scale-img
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            margin-top: 42px;
+        }
+
+        p {
+            margin-top: 24px;
+            font-size: 1.8rem;
+        }
+
+        a {
+            margin-top: 39px;
+            cursor: pointer;
+        }
+    }
+}
+
+.companies {
+    margin-top: 157px;
+
+    img {
+        @include scale-img
+    }
+
+    &__text {
+        margin-bottom: 16px;
+        color: $companies-txt-color;
+        text-align: center;
+    }
+}
+
+.branding {
+    margin-top: 136px;
+    
+    img {
+        @include scale-img
+    }
+
+    &__text {
+        margin-top: 97px;
+        margin-left: 179px;
+
+        p {
+            margin-top: 25px;
+        }
+
+        i {
+            @include arrow-icons
+        }
+    }
+}
+
+.ellipse-2 {
+    position: absolute;
+    width: 679px;
+    height: 679px;
+    background: rgba(142, 173, 213, 0.4);
+    right: -400px;
+    top: 1231px;
+    filter: blur(153px);
+}
+
+.custom {
+    position: relative;
+    margin-top: 136px;
+    z-index: 2;
+
+    img {
+        @include scale-img
+    }
+
+    &__text {
+        margin-top: 97px;
+
+        p {
+            margin-top: 25px;
+        }
+
+        i {
+            @include arrow-icons
+        }
+    }
+}
+
+.testimonials {
+    margin-top: 106px;
+    max-width: 1065px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__p {
+        margin-top: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 1.6rem;
+        color: $text-color;
+    }
+
+    h2 {
+        margin-top: 16px;
+        text-align: center;
+    }
+
+    &__cards {
+        margin-top: 39px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    &__card {
+        background: $bg-gray-color;
+        border-radius: 30px;
+
+        img {
+            width: 129px;
+            height: 130px;
+            margin: 32px 108px;
+            border-radius: 96px;
+            border: 1px solid rgba(222, 220, 219, 0.5);
+        }
+
+        .user {
+            margin-top: -24px;
+            text-align: center;
+            font-size: 1.8rem;
+            color: $text-color;
+
+            &__testimonial {
+                text-align: center;
+                font-size: 1.4rem;
+                padding: 32px 27px 32px 32px;
+            }
+        }        
+    }
+}
+
+.contact {
+    margin-top: 136px;
+    background: $bg-gray-color;
+    border-radius: 30px;
+
+    img {
+        @include scale-img;
+        margin: 0 75px;
+    }
+
+    &__text {
+        margin: 100px 0 0 15px;
+
+        p {
+            margin-top: 16px;
+        }
+
+        button {
+            margin-top: 32px;
+            border: none;           
+            cursor: pointer;
+        }
+    }
+}
+
+.footer {
+    width: 100vw;
+    margin-top: 136px;
+    background: $bg-gray-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+        width: 100%;
+        max-width: 1065px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;  
+    }
+
+    &__logo {
+        height: 333px;
+
+        .logo-p {
+            margin-top: 105px;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        p {
+            margin-top: 40px;
+            font-size: 1.6rem;
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+
+        &-title {
+            margin-top: 105px;
+            margin-bottom: 32px;
+            font-style: 1.8rem;
+            font-weight: 700;
+            color: $text-color
+        }
+
+        a {
+            font-size: 1.6rem;
+            text-decoration: none;
+            color: $text-color;
+            margin-bottom: 24px;
+            cursor: pointer;
+        }
+    }
+
+    .footer-p {
+        margin-top: 86px;
+        margin-bottom: 18px;
+    }
+}
+
+// Media Query
+@import './small';
+@import './large';
+@import './medium';
