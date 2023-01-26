@@ -1,11 +1,11 @@
 @use './colors' as *;
 
 .section {
+    width: 100vw;
     max-width: 1065px;
     display: flex;
     flex-direction: row;
     z-index: 2;
-    margin: 0 25px;
 }
 
 .btn {
@@ -21,10 +21,4 @@
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-}
-
-@media(max-width: 576px) {
-    .section {
-        flex-direction: column;
-    }
 }

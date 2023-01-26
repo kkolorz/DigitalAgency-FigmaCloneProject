@@ -145,6 +145,7 @@ h2 {
 }
 
 .ellipse-2 {
+    display: none;
     position: absolute;
     width: 679px;
     height: 679px;
@@ -177,8 +178,7 @@ h2 {
 }
 
 .testimonials {
-    margin-top: 106px;
-    max-width: 1065px;
+    margin-top: 106px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -209,17 +209,21 @@ h2 {
     &__card {
         background: $bg-gray-color;
         border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         img {
             width: 129px;
-            height: 130px;
-            margin: 32px 108px;
+            height: auto;
+            margin-top: 32px;
+            margin-bottom: 8px;
             border-radius: 96px;
             border: 1px solid rgba(222, 220, 219, 0.5);
         }
 
         .user {
-            margin-top: -24px;
             text-align: center;
             font-size: 1.8rem;
             color: $text-color;
