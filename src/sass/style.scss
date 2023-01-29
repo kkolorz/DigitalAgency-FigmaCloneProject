@@ -54,7 +54,7 @@ h2 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    z-index: 2;
+    z-index: 5;
 
     &__logo p {
         text-transform: uppercase;
@@ -64,10 +64,25 @@ h2 {
         cursor: pointer;
     }
 
+    &__btn {
+        padding: 5px;
+        display: none;
+        cursor: pointer;
+
+        i {
+        font-size: 2rem;
+        }
+    }
+    
+
     &__items {
         display: flex;
         flex-direction: row;
         gap: 40px;
+
+        .close-btn {
+            display: none;
+        }
 
         a {
             overflow: auto;
@@ -78,6 +93,10 @@ h2 {
             color: $text-color;
             cursor: pointer;
             transition: all .3s;
+
+            &:hover {
+                scale: (1.2);
+            }
         }
     }
 }
@@ -142,17 +161,6 @@ h2 {
             @include arrow-icons
         }
     }
-}
-
-.ellipse-2 {
-    display: none;
-    position: absolute;
-    width: 679px;
-    height: 679px;
-    background: rgba(142, 173, 213, 0.4);
-    right: -400px;
-    top: 1231px;
-    filter: blur(153px);
 }
 
 .custom {
