@@ -102,7 +102,7 @@ h2 {
 }
 
 .header {
-    margin-top: 51px;
+    margin-top: 52px;
 
     img {
         @include scale-img
@@ -122,14 +122,14 @@ h2 {
         }
 
         a {
-            margin-top: 39px;
+            margin-top: 40px;
             cursor: pointer;
         }
     }
 }
 
 .companies {
-    margin-top: 157px;
+    margin-top: 158px;
 
     img {
         @include scale-img
@@ -150,8 +150,8 @@ h2 {
     }
 
     &__text {
-        margin-top: 97px;
-        margin-left: 179px;
+        margin-top: 98px;
+        margin-left: 180px;
 
         p {
             margin-top: 25px;
@@ -173,7 +173,7 @@ h2 {
     }
 
     &__text {
-        margin-top: 97px;
+        margin-top: 98px;
 
         p {
             margin-top: 25px;
@@ -207,7 +207,7 @@ h2 {
     }
 
     &__cards {
-        margin-top: 39px;
+        margin-top: 40px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -223,7 +223,7 @@ h2 {
         align-items: center;
 
         img {
-            width: 129px;
+            width: 130px;
             height: auto;
             margin-top: 32px;
             margin-bottom: 8px;
@@ -292,7 +292,7 @@ h2 {
         height: 333px;
 
         .logo-p {
-            margin-top: 105px;
+            margin-top: 106px;
             font-size: 1.8rem;
             font-weight: 700;
         }
@@ -308,7 +308,7 @@ h2 {
         flex-direction: column;
 
         &-title {
-            margin-top: 105px;
+            margin-top: 106px;
             margin-bottom: 32px;
             font-style: 1.8rem;
             font-weight: 700;
