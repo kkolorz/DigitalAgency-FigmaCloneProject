@@ -15,6 +15,12 @@
 
 @mixin mobile-img {
     max-width: 450px;
+    margin: auto;
+}
+
+@mixin mobile-text {
+    max-width: 450px;
+    margin: auto;
 }
 
 @mixin mobile-btn {
@@ -24,6 +30,10 @@
     font-size: 1.4rem;
 }
 
-@mixin space-between-sections {
+@mixin mobile-space-between-sections {
     margin-top: 120px;
+}
+
+@mixin desktop-space-between-sections {
+    margin-top: 136px;
 }

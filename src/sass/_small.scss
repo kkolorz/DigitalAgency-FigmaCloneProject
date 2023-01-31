@@ -86,7 +86,6 @@
 
     .companies {
         padding: 0 25px;
-        margin-top: 120px;
 
         p {
            font-size: 1.4rem; 
@@ -127,8 +126,6 @@
     }
 
     .custom {
-        margin-top: 120px;
-
         &__text {
             text-align: center;
             margin-top: 0;
@@ -148,8 +145,7 @@
     }
 
     .testimonials {
-        overflow: hidden;
-        margin-top: 120px;      
+        overflow: hidden;  
 
         &__p {
             font-size: 1.2rem;
@@ -168,9 +164,7 @@
         }
     }
 
-    .contact {
-        margin-top: 120px;
-
+    .contact {        
         &__text {
             text-align: center;
             margin: 56px 0;

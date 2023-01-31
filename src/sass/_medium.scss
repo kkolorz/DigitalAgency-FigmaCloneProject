@@ -5,13 +5,23 @@
     }
     
     h1 {
-        font-size: 3.8rem;
+        font-size: 4rem;
         text-align: center;
+        @include mobile-text;
     }
     
     h2 {
-        font-size: 3rem;
+        font-size: 3.2rem;
         text-align: center;
+        @include mobile-text;
+    }
+
+    p {
+        @include mobile-text;
+    }
+
+    img {
+        @include mobile-img;
     }
 
     .ellipse-1 {
@@ -93,7 +103,7 @@
 
     .companies {
         padding: 0 25px;
-        @include space-between-sections;
+        @include mobile-space-between-sections;
 
         p {
            font-size: 1.4rem; 
@@ -115,7 +125,7 @@
         &__text {
             text-align: center;
             margin-top: 0;
-            margin-left: 0;
+            margin-bottom: 24px;
             order: 1;
 
             br {
@@ -123,6 +133,7 @@
             }
 
             i {
+                font-style: 2.4rem;
                 margin-top: 32px;
                 transform: rotate(90deg);
             }
@@ -134,7 +145,7 @@
     }
 
     .custom {
-        @include space-between-sections;
+        @include mobile-space-between-sections;
 
         &__text {
             text-align: center;
@@ -156,7 +167,7 @@
 
     .testimonials {
         overflow: hidden;
-        @include space-between-sections;  
+        @include mobile-space-between-sections;  
 
         &__p {
             font-size: 1.2rem;
@@ -176,7 +187,7 @@
     }
 
     .contact {
-        @include space-between-sections;
+        @include mobile-space-between-sections;
 
         &__text {
             text-align: center;
