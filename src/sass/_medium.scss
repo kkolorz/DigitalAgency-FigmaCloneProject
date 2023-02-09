@@ -231,6 +231,28 @@
         }
     }
 
+    .popup {
+        margin: 0;
+
+        &__window {
+
+            height: 480px;
+
+            &--btn {
+                padding: 10px;
+            }
+
+            .text {
+                font-size: 2.5rem;
+                margin: 0;
+            }
+
+            form {
+                width: 80%;
+            }
+        }
+    }
+
     .footer {
         padding: 0 25px;
     }
