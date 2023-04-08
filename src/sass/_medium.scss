@@ -10,7 +10,6 @@
     }
     
     h2 {
-        font-size: 3.2rem;
         text-align: center;
         @include mobile-text;
     }
@@ -23,14 +22,7 @@
         @include mobile-img;
     }
 
-    .ellipse-1 {
-        height: 450px;
-        width: 450px;
-    }
-
     .nav {
-        margin: 48px 24px;
-
         &__logo {
             p {
                 font-size: 1.6rem;
