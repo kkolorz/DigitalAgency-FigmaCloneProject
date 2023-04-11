@@ -1,0 +1,82 @@
+@media screen and (max-width: 576px) {
+    .section {
+        padding: 0 25px;
+    }
+    
+    h1 {
+        font-size: 3.8rem;
+    }
+    
+    h2 {
+        font-size: 3.2rem;
+    }
+
+    .ellipse-1 {
+        height: 450px;
+        width: 450px;
+    }
+
+    .nav {
+        margin: 48px 24px;
+
+        &__logo {
+            p {
+                font-size: 1.4rem;
+            }
+        }
+
+        &__items {
+            position: absolute;
+            flex-direction: column;
+            transform: translateX(-100%);
+
+            .close-btn {
+                position: absolute;
+
+                i {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+
+    .header {
+        margin-top: 47px;
+    }
+
+    .branding {
+        margin-top: 88px;
+
+        &__text {
+            margin-left: 0;
+        }
+    }
+
+    .footer {
+        margin-top: 128px;
+
+        &__container {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        &__logo {
+            text-align: center;
+            height: 210px;
+
+            p {
+                margin-top: 34px;
+            }
+        }
+
+        &__links {
+            &-title {
+                margin-top: 70px;
+            }
+        }
+
+    .footer-p {
+        margin-top: 60px;
+        }
+    }
+}

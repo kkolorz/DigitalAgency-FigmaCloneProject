@@ -1,0 +1,251 @@
+@media screen and (max-width: 768px) {
+    .section {
+        flex-direction: column;
+    }
+    
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+        @include mobile-text;
+    }
+    
+    h2 {
+        text-align: center;
+        @include mobile-text;
+    }
+
+    p {
+        @include mobile-text;
+    }
+
+    img {
+        @include mobile-img;
+    }
+
+    .nav {
+        &__logo {
+            p {
+                font-size: 1.6rem;
+                padding: 2px 24px;
+            }
+        }
+
+        &__btn {
+            display: block;
+            position: fixed;
+            top: 30px;
+            right: 15px;
+            padding: 20px;
+            border-radius: 100px;
+            background-color: $main-color;
+        }
+
+        &__items {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100vh;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            transform: translateX(100%);
+            transition: transform .3s ease-in-out;
+            background-color: $main-color;
+
+            &--active {
+                transform: translateX(0);
+            }
+
+            .close-btn {
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 30px;
+                cursor: pointer;
+
+                i {
+                    font-size: 3.5rem;
+                }
+            }
+
+            a {
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    .header {
+        margin-top: 18px;
+        padding-top: 30px;
+
+        &__text {
+            margin-top: 0;
+
+            br {
+                display: none;
+            }
+            
+            p {
+                font-size: 1.6rem;
+                text-align: center;
+            }
+
+            a {
+                margin: 34px auto;
+                @include mobile-btn;
+            }
+
+            h1 {
+                margin-top: 0;
+            }
+        }
+    }
+
+    .companies {
+        padding: 0 25px;
+        @include mobile-space-between-sections;
+
+        p {
+           font-size: 1.4rem; 
+        }
+
+        img {
+            height: 50px;
+        }
+    }
+
+    .branding {
+        margin-top: 58px;
+        padding-top: 30px;
+
+        img {
+            margin-top: 25px;
+            order: 2;
+        }
+
+        &__text {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 24px;
+            order: 1;
+
+            br {
+                display: none;
+            }
+
+            i {
+                font-style: 2.4rem;
+                margin-top: 32px;
+                transform: rotate(90deg);
+            }
+        }
+    }
+
+    .ellipse-2 {
+        display: none;
+    }
+
+    .custom {
+        @include mobile-space-between-sections;
+
+        &__text {
+            text-align: center;
+            margin-top: 0;
+
+            br {
+                display: none;
+            }
+
+            i {
+                transform: rotate(90deg);
+            }
+        }
+
+        img {
+            margin-top: 25px;
+        }
+    }
+
+    .testimonials {
+        overflow: hidden;
+        @include mobile-space-between-sections;  
+
+        &__p {
+            font-size: 1.2rem;
+            margin-top: 0;
+        }
+
+        &__cards {
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        &__card {
+            .user__testimonial {
+                padding-top: 27px;
+            }
+        }
+    }
+
+    .contact {
+        @include mobile-space-between-sections;
+
+        &__text {
+            text-align: center;
+            margin: 56px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            br {
+                display: none;
+            }
+
+            h2 {
+                max-width: 310px;
+            }
+
+            p {
+                margin-top: 32px;
+            }
+
+            button {
+                margin-top: 48px;
+            }
+        }
+
+        img {
+            display: none;
+        }
+    }
+
+    .popup {
+        margin: 0;
+
+        &__window {
+
+            height: 480px;
+
+            &--btn {
+                padding: 10px;
+            }
+
+            .text {
+                font-size: 2.5rem;
+                margin: 0;
+            }
+
+            form {
+                width: 80%;
+            }
+        }
+    }
+
+    .footer {
+        padding: 0 25px;
+    }
+}

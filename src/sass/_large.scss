@@ -1,0 +1,66 @@
+@media screen and (max-width: 1075px) {
+    .section {
+        padding: 0 25px;
+    }
+
+    h1 {
+        font-size: 4.2rem;
+        text-align: left;
+    }
+    
+    h2 {
+        font-size: 3.4rem;
+    }
+
+    img {
+        max-width: 500px;
+    }
+
+    .nav {
+        padding: 0 25px;
+
+        &__btn {
+            display: none;
+        }
+
+        &__items {
+            gap: 20px;
+        }
+    }
+
+    .companies {
+        padding: 0 25px;
+    }
+
+    .branding {
+        &__text {
+            margin: 97px auto;
+        }
+    }
+
+    .testimonials {
+        padding: 0 25px;
+    }
+
+    .contact {
+        padding: 0 25px;
+
+        img {
+            margin: 0 auto;
+        }
+
+        &__text {
+            margin: auto 0;
+
+            p {
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .footer {
+        padding: 0 25px;
+    }
+}

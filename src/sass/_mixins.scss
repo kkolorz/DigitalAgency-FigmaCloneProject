@@ -1,0 +1,40 @@
+@mixin arrow-icons {
+    margin-top: 45px;
+    font-size: 2rem;
+    transition: scale .3s;
+
+    &:hover {
+        scale: 1.4;
+    }
+}
+
+@mixin scale-img {
+    width: 100%;
+    height: auto;
+}
+
+@mixin mobile-img {
+    max-width: 450px;
+    margin: auto;
+}
+
+@mixin mobile-text {
+    max-width: 450px;
+    margin: auto;
+}
+
+@mixin mobile-btn {
+    width: 140px;
+    height: 35px;
+    padding: 10px 24px;
+    font-size: 1.4rem;
+}
+
+@mixin mobile-space-between-sections {
+    margin-top: 90px;
+    padding-top: 30px;
+}
+
+@mixin desktop-space-between-sections {
+    margin-top: 136px;
+}
